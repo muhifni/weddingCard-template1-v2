@@ -1,3 +1,19 @@
+body {
+  font-family: 'Cinzel';
+}
+
 .nav-link img {
   width: 24px;
+}
+
+section {
+  min-height: 300px;
+}
+
+.mempelai {
+  background-color: #142b39;
+}
+
+.mempelai img {
+  width: 200px;
 }
