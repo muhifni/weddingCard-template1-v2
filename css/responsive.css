@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .mempelai-wanita {
     margin-bottom: 2rem;
   }
@@ -6,8 +6,7 @@
   .mempelai-pria {
     margin-bottom: 3rem;
   }
+}
 
-  .mempelai img {
-    width: 55%;
-  }
+@media (min-width: 1000px) {
 }
