@@ -75,3 +75,15 @@ section {
 .date p {
   font-size: 20px;
 }
+
+.alamat p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date-border {
+  width: 67%;
+  height: 100%;
+  margin: 0 auto;
+  border: 5px solid #daa520;
+}
