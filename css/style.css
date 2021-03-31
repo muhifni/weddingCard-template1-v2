@@ -1,20 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
 body {
   font-family: 'Cinzel';
 }
 
 .nav-link img {
-  width: 24px;
+  width: 28px;
+}
+
+.nav-link {
+  padding: 1rem 1rem;
 }
 
 section {
-  min-height: 500px;
+  min-height: 900px;
 }
 
 .frame {
   border: white 2px solid;
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   padding: 11px;
 }
 
@@ -27,4 +33,45 @@ section {
 }
 .mempelai p {
   text-align: center;
+}
+
+.pembuka img {
+  width: 250px;
+  margin: 2rem 0;
+}
+
+.pembuka p {
+  font-size: 18px;
+}
+
+.nama-pengantin {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.ortu {
+  font-size: 22px;
+}
+
+.pengantin {
+  line-height: 1.4;
+}
+
+.subject-acara {
+  color: #daa520;
+}
+
+.subject-acara hr {
+  border-bottom: 2px solid #daa520;
+  opacity: unset;
+  margin-top: 26px;
+}
+
+.subject-2 {
+  font-size: 2.3vw;
+  font-family: 'Alex Brush', cursive;
+}
+
+.date p {
+  font-size: 20px;
 }

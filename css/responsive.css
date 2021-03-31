@@ -6,6 +6,11 @@
   .mempelai-pria {
     margin-bottom: 3rem;
   }
+
+  .frame {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media (min-width: 1000px) {
