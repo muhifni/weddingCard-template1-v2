@@ -1,4 +1,28 @@
-@media (max-width: 600px) {
+@media (max-width: 225px) {
+  body {
+    width: fit-content;
+  }
+
+  .frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nama-pengantin {
+    font-size: 40px;
+  }
+
+  .subject-2 p {
+    margin-bottom: unset;
+  }
+
+  .date-border {
+    width: 80%;
+    height: 54%;
+  }
+}
+
+@media (min-width: 320px) {
   .mempelai-wanita {
     margin-bottom: 2rem;
   }
@@ -11,7 +35,32 @@
     width: 200px;
     height: 200px;
   }
+
+  .subject-2 p {
+    margin-bottom: unset;
+  }
+
+  .dates {
+    margin-top: 1.5rem;
+  }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 375px) {
+  .date-border {
+    width: 100%;
+    height: 90%;
+  }
+}
+@media (min-width: 414px) {
+  .date-border {
+    width: 85%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .date-border {
+    width: 67%;
+    height: 100%;
+  }
 }

@@ -68,7 +68,7 @@ section {
 }
 
 .subject-2 {
-  font-size: 2.3vw;
+  font-size: 38px;
   font-family: 'Alex Brush', cursive;
 }
 
@@ -82,8 +82,6 @@ section {
 }
 
 .date-border {
-  width: 67%;
-  height: 100%;
   margin: 0 auto;
   border: 5px solid #daa520;
 }
