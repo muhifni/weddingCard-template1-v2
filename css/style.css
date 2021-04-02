@@ -67,9 +67,10 @@ section {
   margin-top: 26px;
 }
 
-.subject-2 {
+.subject-2 p {
   font-size: 38px;
   font-family: 'Alex Brush', cursive;
+  -webkit-text-stroke: 0.7px;
 }
 
 .date p {
@@ -122,4 +123,26 @@ section {
   width: 50%;
   position: relative;
   bottom: 20%;
+}
+
+.time-container {
+  background-color: goldenrod;
+}
+.time-container,
+.label-container {
+  width: 6%;
+}
+
+.time-container p {
+  font-size: 34px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+}
+
+.label-container p {
+  font-size: 20px;
+  font-weight: 600;
+  color: goldenrod;
+  -webkit-text-stroke: 1px;
+  letter-spacing: 2px;
 }
