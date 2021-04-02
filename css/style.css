@@ -57,8 +57,22 @@ section {
   line-height: 1.4;
 }
 
+.subject-section-2 {
+  border: 4px solid goldenrod;
+  color: goldenrod;
+  box-shadow: 0px 4px 7px 1px rgb(234 202 58);
+  width: 36.333333%;
+}
+
+.subject-section-3 {
+  border: 4px solid white;
+  color: white;
+  box-shadow: 0px 4px 7px 1px rgb(117 116 112);
+  width: 36.333333%;
+}
+
 .subject-acara {
-  color: #daa520;
+  color: gold;
 }
 
 .subject-acara hr {
@@ -70,7 +84,7 @@ section {
 .subject-2 p {
   font-size: 38px;
   font-family: 'Alex Brush', cursive;
-  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke: 0.7px goldenrod;
 }
 
 .date p {
@@ -127,6 +141,7 @@ section {
 
 .time-container {
   background-color: goldenrod;
+  border-radius: 0.5rem;
 }
 .time-container,
 .label-container {
@@ -145,4 +160,8 @@ section {
   color: goldenrod;
   -webkit-text-stroke: 1px;
   letter-spacing: 2px;
+}
+
+.gallery {
+  background-color: #142b39;
 }
