@@ -62,7 +62,7 @@ section {
 }
 
 .subject-acara hr {
-  border-bottom: 2px solid #daa520;
+  border-bottom: 2.5px solid #daa520;
   opacity: unset;
   margin-top: 26px;
 }
@@ -84,4 +84,42 @@ section {
 .date-border {
   margin: 0 auto;
   border: 5px solid #daa520;
+}
+
+.menghitung-hari {
+  width: 270px;
+  height: 70px;
+  border: 3px solid goldenrod;
+  opacity: unset;
+}
+
+.menghitung-hari p {
+  width: 250px;
+  height: 50px;
+  background-color: goldenrod;
+  color: white;
+  padding-top: 9px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.akad {
+  border: 4px solid goldenrod;
+  opacity: unset;
+  height: 350px;
+  width: 400px;
+}
+
+.resepsi {
+  border: 4px solid goldenrod;
+  opacity: unset;
+  height: 350px;
+  width: 400px;
+}
+
+.resepsi hr,
+.akad hr {
+  width: 50%;
+  position: relative;
+  bottom: 20%;
 }
