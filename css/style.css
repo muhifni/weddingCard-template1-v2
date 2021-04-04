@@ -167,3 +167,13 @@ section {
   border-radius: 16px;
   box-shadow: 0px 0px 30px 0px rgb(224 225 226);
 }
+
+.bg-gold {
+  color: #fff;
+  background-color: goldenrod;
+  border-color: goldenrod;
+}
+
+.card {
+  border: 1px solid rgb(226 158 24);
+}
