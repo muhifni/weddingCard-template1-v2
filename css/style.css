@@ -25,8 +25,9 @@ section {
 }
 
 .mempelai,
-.gallery {
-  background-color: #142b39;
+.gallery,
+footer {
+  background-color: #966d0c;
 }
 
 .mempelai img {
@@ -59,25 +60,25 @@ section {
 }
 
 .subject-section-2 {
-  border: 4px solid goldenrod;
-  color: goldenrod;
-  box-shadow: 0px 4px 7px 1px rgb(234 202 58);
+  border: 4px solid #966d0c;
+  color: #966d0c;
+  box-shadow: 0px 4px 7px 1px rgb(201 195 167);
   width: 36.333333%;
 }
 
 .subject-section-3 {
   border: 4px solid white;
   color: white;
-  box-shadow: 0px 4px 7px 5px rgb(154 142 142);
+  box-shadow: 0px 0px 14px 0px rgb(48 48 48);
   width: 36.333333%;
 }
 
 .subject-acara {
-  color: gold;
+  color: #966d0c;
 }
 
 .subject-acara hr {
-  border-bottom: 2.5px solid #daa520;
+  border-bottom: 2.5px solid #966d0c;
   opacity: unset;
   margin-top: 26px;
 }
@@ -85,7 +86,7 @@ section {
 .subject-2 p {
   font-size: 38px;
   font-family: 'Alex Brush', cursive;
-  -webkit-text-stroke: 0.7px goldenrod;
+  -webkit-text-stroke: 0.7px #966d0c;
 }
 
 .date p {
@@ -99,20 +100,20 @@ section {
 
 .date-border {
   margin: 0 auto;
-  border: 5px solid #daa520;
+  border: 5px solid #966d0c;
 }
 
 .menghitung-hari {
   width: 270px;
   height: 70px;
-  border: 3px solid goldenrod;
+  border: 3px solid #966d0c;
   opacity: unset;
 }
 
 .menghitung-hari p {
   width: 250px;
   height: 50px;
-  background-color: goldenrod;
+  background-color: #966d0c;
   color: white;
   padding-top: 9px;
   font-size: 22px;
@@ -120,14 +121,17 @@ section {
 }
 
 .akad {
-  border: 4px solid goldenrod;
+  /* border: 4px solid #966D0C; */
+  background-image: url('https://ik.imagekit.io/ifu66naiyrt/border_VUXKjVvuK.webp');
+  background-size: 100% 100%;
   opacity: unset;
   height: 350px;
   width: 400px;
 }
 
 .resepsi {
-  border: 4px solid goldenrod;
+  background-image: url('https://ik.imagekit.io/ifu66naiyrt/border_VUXKjVvuK.webp');
+  background-size: 100% 100%;
   opacity: unset;
   height: 350px;
   width: 400px;
@@ -141,7 +145,7 @@ section {
 }
 
 .time-container {
-  background-color: goldenrod;
+  background-color: #966d0c;
   border-radius: 0.5rem;
 }
 .time-container,
@@ -158,22 +162,26 @@ section {
 .label-container p {
   font-size: 20px;
   font-weight: 600;
-  color: goldenrod;
+  color: #966d0c;
   -webkit-text-stroke: 1px;
   letter-spacing: 2px;
 }
 
 .carousel-inner {
   border-radius: 16px;
-  box-shadow: 0px 0px 30px 0px rgb(224 225 226);
+  box-shadow: 0px 0px 14px 0px rgb(92 96 100);
 }
 
 .bg-gold {
   color: #fff;
-  background-color: goldenrod;
-  border-color: goldenrod;
+  background-color: #966d0c;
+  border-color: #966d0c;
 }
 
 .card {
   border: 1px solid rgb(226 158 24);
+}
+
+footer {
+  height: 132px;
 }
