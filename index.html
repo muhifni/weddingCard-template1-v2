@@ -41,7 +41,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link">
-            <img id="volume" onclick="mutedUnmuted();" src="icons/volume.svg" alt="" />
+            <img id="mutedBtn" onclick="mutedUnmuted();" src="icons/volume.svg" alt="" />
           </a>
         </li>
       </ul>
@@ -356,18 +356,18 @@
 
     <!-- Muted / Unmute  toggle-->
     <script>
-      let img1 = 'file:///D:/undangan-digital/weddingCard-template1/icons/volume.svg';
-      let img2 = 'file:///D:/undangan-digital/weddingCard-template1/icons/mute.svg';
-      let vid = document.getElementById('myMusic');
-      let x = document.getElementById('volume');
+      const img1 = '/icons/volume.svg';
+      const img2 = '/icons/mute.svg';
+      const vid = document.getElementById('myMusic');
+      const img = document.getElementById('mutedBtn');
 
       function mutedUnmuted() {
-        if (x.src === img1) {
-          x.src = img2;
+        if (img.src === img1) {
+          img.src = img2;
           vid.muted = true;
           console.log(vid.muted);
         } else {
-          x.src = img1;
+          img.src = img1;
           vid.muted = false;
           console.log(vid.muted);
         }
