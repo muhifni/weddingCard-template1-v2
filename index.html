@@ -331,7 +331,7 @@
     <!-- End Footer -->
 
     <!-- Music -->
-    <audio id="myMusic" preload="preload" autoplay loop>
+    <audio id="myMusic" preload="preload" loop>
       <source src="music/Jason Mraz - I Won't Give Up.ogg" type="audio/ogg" />
       <source src="music/Jason Mraz - I Won't Give Up.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
@@ -358,18 +358,20 @@
     <script>
       const img1 = 'https://ik.imagekit.io/ifu66naiyrt/volume_lrTZhC8d78.svg';
       const img2 = 'https://ik.imagekit.io/ifu66naiyrt/mute_uaF76gV3N.svg';
-      const vid = document.getElementById('myMusic');
+      const music = document.getElementById('myMusic');
       const img = document.getElementById('mutedBtn');
 
       function mutedUnmuted() {
         if (img.src === img1) {
           img.src = img2;
-          vid.muted = true;
-          console.log(vid.muted);
+          music.pause();
+          // music.muted = true;
+          // console.log(vid.muted);
         } else {
           img.src = img1;
-          vid.muted = false;
-          console.log(vid.muted);
+          music.play();
+          // music.muted = false;
+          // console.log(vid.muted);
         }
       }
     </script>
