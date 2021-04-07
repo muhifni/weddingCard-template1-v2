@@ -21,32 +21,51 @@
       <ul class="nav nav-pills nav-justified">
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <img src="icons/026-couple.svg" alt="Mempelai" />
+            <img src="icons/couple.svg" alt="Mempelai" />
           </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <img src="icons/038-calendar.svg" alt="" />
+            <img src="icons/calendar.svg" alt="" />
           </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <img src="icons/013-photo.svg" alt="" />
+            <img src="icons/photo.svg" alt="" />
           </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <img src="icons/021-wedding location.svg" alt="" />
+            <img src="icons/wedding-location.svg" alt="" />
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link">
-            <img id="mutedBtn" onclick="mutedUnmuted();" src="https://ik.imagekit.io/ifu66naiyrt/volume_lrTZhC8d78.svg" alt="mute" />
+            <img id="mutedBtn" onclick="mutedUnmuted();" src="https://ik.imagekit.io/ifu66naiyrt/volume_WXh7-JI_w.svg" alt="mute" />
           </a>
         </li>
       </ul>
     </nav>
     <!-- End Navbar -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="playMusic();">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Modal -->
 
     <!-- Mempelai -->
     <section class="mempelai" id="mempelai">
@@ -174,15 +193,19 @@
         <div class="row time-counter justify-content-center text-center text-white mt-5 mb-3">
           <div class="col-sm-1 time-container">
             <p class="position-relative top-50 start-50 translate-middle" id="day"></p>
+            <span>Hari</span>
           </div>
           <div class="col-sm-1 time-container mx-3">
             <p class="position-relative top-50 start-50 translate-middle" id="hour"></p>
+            <span>Jam</span>
           </div>
           <div class="col-sm-1 time-container me-3">
             <p class="position-relative top-50 start-50 translate-middle" id="minute"></p>
+            <span>Menit</span>
           </div>
           <div class="col-sm-1 time-container">
             <p class="position-relative top-50 start-50 translate-middle" id="second"></p>
+            <span>Detik</span>
           </div>
         </div>
         <!-- End Time Counter -->
@@ -283,7 +306,7 @@
                   Waktu: 08.00 WITA<br />
                   Alamat: Jl. Muara Banta Dalam
                 </p>
-                <a href="https://goo.gl/maps/42spcNSqpp1QsCej9" target="_blank" class="btn bg-gold" rel="noopener">Open Map</a>
+                <a href="https://goo.gl/maps/42spcNSqpp1QsCej9" target="_blank" class="btn bg-gold" rel="noopener noreferrer">Open Map</a>
               </div>
             </div>
           </div>
@@ -309,7 +332,7 @@
                   Waktu: 08.00 WITA<br />
                   Alamat: Jl. Muara Banta Dalam
                 </p>
-                <a href="https://goo.gl/maps/42spcNSqpp1QsCej9" target="_blank" class="btn bg-gold" rel="noopener">Open Map</a>
+                <a href="https://goo.gl/maps/42spcNSqpp1QsCej9" target="_blank" class="btn bg-gold" rel="noopener noreferrer">Open Map</a>
               </div>
             </div>
           </div>
@@ -338,8 +361,9 @@
     </audio>
     <!-- End Music -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 
     <!-- <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -354,10 +378,20 @@
       });
     </script> -->
 
+    <!-- Modal on Page Load -->
+    <script>
+      let myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {});
+      document.onreadystatechange = function () {
+        myModal.show();
+      };
+    </script>
+
+    <!-- End Modal on Page Load -->
+
     <!-- Muted / Unmute  toggle-->
     <script>
-      const img1 = 'https://ik.imagekit.io/ifu66naiyrt/volume_lrTZhC8d78.svg';
-      const img2 = 'https://ik.imagekit.io/ifu66naiyrt/mute_uaF76gV3N.svg';
+      const img1 = 'https://ik.imagekit.io/ifu66naiyrt/volume_WXh7-JI_w.svg';
+      const img2 = 'https://ik.imagekit.io/ifu66naiyrt/mute_L0j-LDO1z.svg';
       const music = document.getElementById('myMusic');
       const img = document.getElementById('mutedBtn');
 
@@ -373,6 +407,10 @@
           // music.muted = false;
           // console.log(vid.muted);
         }
+      }
+
+      function playMusic() {
+        music.play();
       }
     </script>
     <!-- End Muted / Unmuted toggle -->
