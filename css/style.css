@@ -153,8 +153,10 @@ footer {
 .time-container {
   background-color: #966d0c;
   border-radius: 0.5rem;
+  height: 70px;
+  width: 70px;
 }
-.time-container,
+
 .label-container {
   width: 6%;
 }
@@ -163,14 +165,6 @@ footer {
   font-size: 34px;
   font-weight: bold;
   -webkit-text-stroke: 1px;
-}
-
-.label-container p {
-  font-size: 20px;
-  font-weight: 600;
-  color: #966d0c;
-  -webkit-text-stroke: 1px;
-  letter-spacing: 2px;
 }
 
 .carousel-inner {

@@ -192,36 +192,20 @@
         <!-- Row Time Counter -->
         <div class="row time-counter justify-content-center text-center text-white mt-5 mb-3">
           <div class="col-sm-1 time-container">
-            <p class="position-relative top-50 start-50 translate-middle" id="day"></p>
-            <span>Hari</span>
+            <p class="position-relative start-50 translate-middle" id="day" style="top: 37%"></p>
+            <span class="position-relative" style="bottom: 37%">Hari</span>
           </div>
           <div class="col-sm-1 time-container mx-3">
-            <p class="position-relative top-50 start-50 translate-middle" id="hour"></p>
-            <span>Jam</span>
+            <p class="position-relative start-50 translate-middle" id="hour" style="top: 37%"></p>
+            <span class="position-relative" style="bottom: 37%">Jam</span>
           </div>
           <div class="col-sm-1 time-container me-3">
-            <p class="position-relative top-50 start-50 translate-middle" id="minute"></p>
-            <span>Menit</span>
+            <p class="position-relative start-50 translate-middle" id="minute" style="top: 37%"></p>
+            <span class="position-relative" style="bottom: 37%">Menit</span>
           </div>
           <div class="col-sm-1 time-container">
-            <p class="position-relative top-50 start-50 translate-middle" id="second"></p>
-            <span>Detik</span>
-          </div>
-        </div>
-        <!-- End Time Counter -->
-        <!-- Row Label Time Counter -->
-        <div class="row time-label justify-content-center text-center">
-          <div class="col-sm-1 label-container">
-            <p id="day-label">HARI</p>
-          </div>
-          <div class="col-sm-1 label-container ms-3 me-2">
-            <p id="hour-label">JAM</p>
-          </div>
-          <div class="col-sm-1 label-container me-3">
-            <p id="minute-label ">MENIT</p>
-          </div>
-          <div class="col-sm-1 label-container">
-            <p id="second-label">DETIK</p>
+            <p class="position-relative start-50 translate-middle" id="second" style="top: 37%"></p>
+            <span class="position-relative" style="bottom: 37%">Detik</span>
           </div>
         </div>
         <!-- End Time Counter -->
@@ -418,7 +402,7 @@
     <!-- JS Time Counter -->
     <script>
       // Set the date we're counting down to
-      const countDownDate = new Date('Apr 3, 2021 08:00:00').getTime();
+      const countDownDate = new Date('Apr 13, 2021 08:00:00').getTime();
 
       // Update the count down every 1 second
       const x = setInterval(function () {
