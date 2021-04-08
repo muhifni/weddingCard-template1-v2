@@ -15,7 +15,7 @@
 
     <title>Wedding Card</title>
   </head>
-  <body>
+  <body oncontextmenu="return false;">
     <!-- Navbar -->
     <nav class="navbar-dark bg-light fixed-bottom">
       <ul class="nav nav-pills nav-justified">
@@ -51,15 +51,32 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="playMusic();">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal-content" style="background-color: #8d660ced">
+          <div class="modal-body">
+            <div class="row text-center justify-content-center">
+              <div class="col-10">
+                <div class="row justify-content-center my-4 position-relative">
+                  <img class="position-absolute frame-ornament-1" src="img/gold-flower-kanan-atas.webp" alt="" />
+                  <div class="col border border-white border-2 p-2">
+                    <div class="bg-white py-3" style="line-height: 2.3rem; color: #966d0c">
+                      <div>
+                        <p class="mb-0" style="font-size: 0.8rem">WEDDING</p>
+                        <p class="fw-bold mb-0" style="font-size: 1.75rem">SITI FATIMAH<br />&<br />ABDULLAH</p>
+                        <p class="mb-0" style="font-size: 0.8rem">23 MARET 2021</p>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="position-absolute frame-ornament-2" src="img/gold-flower-kiri-bawah.webp" alt="" />
+                </div>
+                <div class="text-white">
+                  <p>Kepada Yth.</p>
+                  <p>Bapak/Ibu/Saudara/i</p>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal" onclick="playMusic();">Buka Undangan</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -330,7 +347,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-center pt-4">
-            <p class="text-white">@copyright Muhammad Hifni</p>
+            <p class="text-white">&copy; copyright Muhammad Hifni</p>
           </div>
         </div>
       </div>
@@ -349,95 +366,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 
-    <!-- <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(window).resize(function () {
-        if ($(window).width() <= 225) $('.date-number').addClass('position-relative');
-        else $('.date-number').removeClass('position-relative');
-      });
-
-      $(window).resize(function () {
-        if ($(window).width() <= 225) $('.date-border').addClass('position-absolute top-50 start-50 translate-middle');
-        else $('.date-border').removeClass('position-absolute top-50 start-50 translate-middle');
-      });
-    </script> -->
-
-    <!-- Modal on Page Load -->
-    <script>
-      let myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {});
-      document.onreadystatechange = function () {
-        myModal.show();
-      };
-    </script>
-
-    <!-- End Modal on Page Load -->
-
-    <!-- Muted / Unmute  toggle-->
-    <script>
-      const img1 = 'https://ik.imagekit.io/ifu66naiyrt/volume_WXh7-JI_w.svg';
-      const img2 = 'https://ik.imagekit.io/ifu66naiyrt/mute_L0j-LDO1z.svg';
-      const music = document.getElementById('myMusic');
-      const img = document.getElementById('mutedBtn');
-
-      function mutedUnmuted() {
-        if (img.src === img1) {
-          img.src = img2;
-          music.pause();
-          // music.muted = true;
-          // console.log(vid.muted);
-        } else {
-          img.src = img1;
-          music.play();
-          // music.muted = false;
-          // console.log(vid.muted);
-        }
-      }
-
-      function playMusic() {
-        music.play();
-      }
-    </script>
-    <!-- End Muted / Unmuted toggle -->
-
-    <!-- JS Time Counter -->
-    <script>
-      // Set the date we're counting down to
-      const countDownDate = new Date('Apr 13, 2021 08:00:00').getTime();
-
-      // Update the count down every 1 second
-      const x = setInterval(function () {
-        // Get today's date and time
-        const now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        const distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id :
-        // Day
-        document.getElementById('day').innerHTML = days;
-        // Hour
-        document.getElementById('hour').innerHTML = hours;
-        // Minute
-        document.getElementById('minute').innerHTML = minutes;
-        // Second
-        document.getElementById('second').innerHTML = seconds;
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById('day').innerHTML = '0';
-          document.getElementById('hour').innerHTML = ' 0';
-          document.getElementById('minute').innerHTML = ' 0';
-          document.getElementById('second').innerHTML = ' 0';
-        }
-      }, 1000);
-    </script>
-    <!-- End JS Time Counter -->
+    <script src="js/app.js"></script>
   </body>
 </html>
