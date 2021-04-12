@@ -172,6 +172,20 @@
   }
 }
 
+@media (min-width: 360px) {
+  .frame-ornament-2 {
+    width: 50%;
+    top: 8.6rem;
+    right: 11.9rem;
+  }
+
+  .frame-ornament-1 {
+    width: 50%;
+    bottom: 8.8rem;
+    left: 11.2rem;
+  }
+}
+
 @media (min-width: 375px) {
   .date-border {
     width: 100%;
