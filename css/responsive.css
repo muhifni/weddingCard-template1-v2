@@ -191,19 +191,32 @@
     width: 100%;
     height: 82%;
   }
-
-  .frame-ornament-2 {
-    width: 47%;
-    top: 8.2rem;
-    right: 12.2rem;
-  }
-
   .frame-ornament-1 {
     width: 47%;
     bottom: 8.5rem;
-    left: 11.5rem;
+    left: 12rem;
+  }
+
+  .frame-ornament-2 {
+    width: 47%;
+    top: 8.5rem;
+    right: 12.5rem;
   }
 }
+
+@media (min-width: 411px) {
+  .frame-ornament-1 {
+    width: 48%;
+    bottom: 8.5rem;
+    left: 13rem;
+  }
+  .frame-ornament-2 {
+    width: 48%;
+    top: 8rem;
+    right: 13.7rem;
+  }
+}
+
 @media (min-width: 414px) {
   .date-border {
     width: 95%;
@@ -219,6 +232,53 @@
     width: 45%;
     bottom: 8rem;
     left: 13.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .frame-ornament-1 {
+    width: 35%;
+    bottom: 7.5rem;
+    left: 22.2rem;
+  }
+
+  .frame-ornament-2 {
+    width: 35%;
+    top: 7.3rem;
+    right: 22.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frame-ornament-1 {
+    width: 27%;
+    bottom: 7.8rem;
+    left: 31.2rem;
+  }
+
+  .frame-ornament-2 {
+    width: 27%;
+    top: 7.5rem;
+    right: 31.6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 760px) {
+  .maps {
+    width: 46.333333% !important;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 799px) {
+  .frame-ornament-1 {
+    width: 27%;
+    bottom: 7.5rem;
+    left: 32.4rem;
+  }
+
+  .frame-ornament-2 {
+    width: 27%;
+    top: 7.2rem;
+    right: 33rem;
   }
 }
 
