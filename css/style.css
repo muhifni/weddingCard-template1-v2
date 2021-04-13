@@ -20,6 +20,7 @@ section {
 }
 .mempelai,
 .gallery,
+.health,
 footer {
   background-color: #966d0c;
 }
@@ -156,3 +157,15 @@ footer {
   right: 9.6rem;
   transform: scale(1.1) rotate(359deg) translate(3px, 0px);
 } */
+
+.card-icon img {
+  width: 100px;
+}
+
+.nav-item .nav-link.active {
+  background-color: unset !important;
+  border-bottom: 3px solid #a4770e !important;
+  padding-bottom: 6px;
+  width: 80% !important;
+  margin: 0 auto;
+}

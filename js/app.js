@@ -44,7 +44,7 @@ function playMusic() {
 
 // JS Time Counter
 // Set the date we're counting down to
-const countDownDate = new Date('Apr 13, 2021 08:00:00').getTime();
+const countDownDate = new Date('Apr 23, 2021 08:00:00').getTime();
 
 // Update the count down every 1 second
 const x = setInterval(function () {
