@@ -12,6 +12,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/button-animated.css" />
 
     <title>Wedding Card</title>
   </head>
@@ -130,9 +131,11 @@
       <!-- Kalender Acara -->
       <section class="acara" id="acara" data-bs-spy="scroll" data-bs-target="#my-navbar" data-bs-offset="0" tabindex="0">
         <div class="container py-5">
-          <div class="row text-center justify-content-center mb-4">
-            <div class="col-5 subject-section-2">
-              <p class="fs-2 fw-bold mt-2">RANGKAIAN ACARA</p>
+          <div class="row position-relative justify-content-center text-center mb-1">
+            <div class="col position-relative">
+              <div class="subject-section-2 position-relative top-0 start-50 translate-middle-x px-2">
+                <p class="d-block position-relative top-50 start-50 translate-middle fw-bold">RANGKAIAN ACARA</p>
+              </div>
             </div>
           </div>
 
@@ -207,16 +210,16 @@
           <!-- End Row Kalender Acara -->
 
           <!-- Row countdown -->
-          <div class="row position-relative justify-content-center text-center mt-4">
+          <div class="row position-relative justify-content-center text-center mt-2">
             <div class="col position-relative">
               <div class="menghitung-hari position-relative top-0 start-50 translate-middle-x">
-                <p class="d-block position-relative top-50 start-50 translate-middle text-white fw-bold">MENGHITUNG HARI</p>
+                <p class="d-block position-relative top-50 start-50 translate-middle fw-bold">MENGHITUNG HARI</p>
               </div>
             </div>
           </div>
           <!-- End row countdown -->
           <!-- Row Time Counter -->
-          <div class="row time-counter justify-content-center text-center text-white mt-5 mb-3">
+          <div class="row time-counter justify-content-center text-center mt-5 mb-3">
             <div class="col-sm-1 time-container">
               <p class="position-relative start-50 translate-middle" id="day" style="top: 37%"></p>
               <span class="position-relative" style="bottom: 37%">Hari</span>
@@ -287,13 +290,15 @@
       <!-- Peta Lokasi -->
       <section class="p-lokasi" id="p-lokasi" data-bs-spy="scroll" data-bs-target="#my-navbar" data-bs-offset="0" tabindex="0">
         <div class="container pt-5">
-          <div class="row text-center justify-content-center mb-5">
-            <div class="col-5 subject-section-2">
-              <p class="fs-1 fw-bold mt-2">PETA LOKASI</p>
+          <div class="row position-relative justify-content-center text-center mb-1">
+            <div class="col position-relative">
+              <div class="subject-section-2 position-relative top-0 start-50 translate-middle-x px-2">
+                <p class="d-block position-relative top-50 start-50 translate-middle fw-bold">PETA LOKASI</p>
+              </div>
             </div>
           </div>
 
-          <div class="row justify-content-center text-center pt-3">
+          <div class="row justify-content-center text-center pt-4">
             <div class="col-md-4 maps">
               <div class="card" style="width: 18rem">
                 <div class="card-body bg-gold">
@@ -354,9 +359,9 @@
       <!-- Protokol Kesehatan -->
       <section class="health" id="health">
         <div class="container pt-4 px-3">
-          <div class="row my-4">
-            <div class="col text-center text-white">
-              <h4>TETAP PATUHI PROTOKOL KESEHATAN</h4>
+          <div class="row my-4 justify-content-center">
+            <div class="col fw-bold text-center text-white">
+              <h4 class="fw-bold border border-3 border-white p-3" style="font-family: system-ui">TETAP PATUHI PROTOKOL KESEHATAN</h4>
             </div>
           </div>
 
@@ -366,7 +371,7 @@
                 <div class="card-icon mb-4">
                   <img src="icons/face-protection.svg" alt="" />
                 </div>
-                <h4 class="card-title fw-bold">GUNAKAN MASKER</h4>
+                <h4 class="card-title fw-bold text-brown">GUNAKAN MASKER</h4>
               </div>
             </div>
             <div class="col-md-6">
@@ -374,7 +379,7 @@
                 <div class="card-icon mb-4">
                   <img src="icons/social-distancing.svg" alt="" />
                 </div>
-                <h4 class="card-title fw-bold">JAGA JARAK MINIMAL 2 METER</h4>
+                <h4 class="card-title fw-bold text-brown">JAGA JARAK MINIMAL 2 METER</h4>
               </div>
             </div>
             <div class="col-md-6">
@@ -382,7 +387,7 @@
                 <div class="card-icon mb-4">
                   <img src="icons/washing-hands.svg" alt="" />
                 </div>
-                <h4 class="card-title fw-bold">JAGA KEBERSIHAN TANGAN</h4>
+                <h4 class="card-title fw-bold text-brown">JAGA KEBERSIHAN TANGAN</h4>
               </div>
             </div>
           </div>
@@ -391,8 +396,29 @@
       <!-- End Protokol Kesehatan -->
 
       <!-- Form Reservasi -->
-      <section class="form" id="form">
-        <div class="container"></div>
+      <section class="form" id="form" style="min-height: 448px">
+        <div class="container pt-4 px-3">
+          <div class="card mt-2" style="width: 18rem">
+            <h4 class="card-header form-header">Reservasi Kehadiran</h4>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama :</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Masukkan nama anda.." required />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">No HP / WA :</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Masukkan no hp / wa anda.." required />
+                </div>
+                <div class="mb-3">
+                  <label for="people" class="form-label">Jumlah Orang :</label>
+                  <input type="text" class="form-control" id="people" aria-describedby="people" placeholder="Reservasi untuk berapa orang.." required />
+                </div>
+                <button type="submit" class="btn btn-gold">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- End Form Reservasi -->
 

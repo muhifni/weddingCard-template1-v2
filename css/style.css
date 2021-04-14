@@ -22,7 +22,12 @@ section {
 .gallery,
 .health,
 footer {
-  background-color: #966d0c;
+  background-image: linear-gradient(178deg, hsl(36deg 54% 50%) 21%, hsl(50deg 87% 65%) 55%, hsl(36deg 54% 50%) 82%);
+}
+.acara,
+.p-lokasi,
+.form {
+  background-color: #0b1826;
 }
 .mempelai img {
   width: 100%;
@@ -50,15 +55,28 @@ footer {
 .subject-section-2,
 .subject-section-3,
 .carousel-inner,
+.akad,
+.resepsi,
 .menghitung-hari,
 .card {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
 .subject-section-2 {
-  border: 4px solid #966d0c;
-  color: #966d0c;
-  width: 36.333333%;
+  height: 70px;
+  width: 282px;
+  border: 3px solid #966d0c;
+  opacity: unset;
+  /* width: 36.333333%; */
 }
+
+.subject-section-2 p {
+  /* width: 270px; */
+  height: 50px;
+  background-image: linear-gradient(213deg, hsl(36deg 54% 47%) 13%, hsl(50deg 87% 55%) 54%, hsl(36deg 54% 47%) 91%);
+  padding-top: 4px;
+  font-size: 1.7rem;
+}
+
 .subject-section-3 {
   border: 4px solid white;
   color: white;
@@ -75,46 +93,56 @@ footer {
 .subject-2 p {
   font-size: 2.4rem;
   font-family: 'Alex Brush', cursive;
-  -webkit-text-stroke: 0.7px #966d0c;
+  /* -webkit-text-stroke: 0.7px #966d0c; */
+  background-image: linear-gradient(to right, #462523 0, hsl(36deg 54% 55%) 22%, #f6e27a 45%, hsl(56deg 75% 90%) 50%, rgb(246 226 122) 55%, hsl(36deg 54% 55%) 78%, #462523 100%);
+  color: transparent;
+  font-weight: 700;
+  -webkit-background-clip: text;
 }
+
 .date p,
 .alamat p {
+  font-family: system-ui;
   font-size: 1.3rem;
+  background-image: linear-gradient(to right, hsl(36deg 54% 55%) 22%, #f6e27a 45%, hsl(56deg 75% 70%) 50%, rgb(246 226 122) 55%, hsl(36deg 54% 55%) 79%);
+  color: transparent;
+  font-weight: 700;
+  -webkit-background-clip: text;
 }
 .alamat p {
   font-weight: bold;
 }
 .date-border {
   margin: 0 auto;
-  border: 5px solid #966d0c;
+  border: 3px solid hsl(42deg 85% 35%);
+  background-image: linear-gradient(to right, hsl(36deg 54% 55%) 22%, #f6e27a 45%, hsl(56deg 75% 70%) 50%, rgb(246 226 122) 55%, hsl(36deg 54% 55%) 79%);
 }
 .menghitung-hari {
-  width: 270px;
-  height: 70px;
+  width: 230px;
+  height: 65px;
   border: 3px solid #966d0c;
   opacity: unset;
 }
 .menghitung-hari p {
-  width: 250px;
-  height: 50px;
-  background-color: #966d0c;
-  color: white;
+  width: 212px;
+  height: 45px;
+  background-image: linear-gradient(213deg, hsl(36deg 54% 47%) 13%, hsl(50deg 87% 55%) 54%, hsl(36deg 54% 47%) 91%);
   padding-top: 9px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
-.akad,
-.resepsi {
-  background-image: url('https://ik.imagekit.io/ifu66naiyrt/border_VUXKjVvuK.webp');
-}
-
 .akad,
 .resepsi {
   background-size: 100% 100%;
   opacity: unset;
   height: 350px;
   width: 400px;
+  /* background-image: url('https://ik.imagekit.io/ifu66naiyrt/border_VUXKjVvuK.webp'); */
+  border: 3px solid hsl(45deg 90% 40%);
+  border-radius: 2%;
+  background-color: #0b1826;
 }
+
 .resepsi hr,
 .akad hr {
   width: 50%;
@@ -122,7 +150,7 @@ footer {
   bottom: 20%;
 }
 .time-container {
-  background-color: #966d0c;
+  background-image: linear-gradient(213deg, hsl(36deg 54% 47%) 13%, hsl(50deg 87% 58%) 54%, hsl(36deg 54% 47%) 91%);
   border-radius: 0.5rem;
   height: 70px;
   width: 70px;
@@ -135,9 +163,14 @@ footer {
   border-radius: 16px;
 }
 .bg-gold {
-  color: #fff;
-  background-color: #966d0c;
+  background-image: linear-gradient(215deg, hsl(36deg 54% 47%) 13%, hsl(50deg 87% 62%) 54%, hsl(36deg 54% 47%) 91%);
   border-color: #966d0c;
+}
+
+.btn-gold {
+  background-image: linear-gradient(213deg, hsl(36deg 54% 56%) 13%, hsl(50deg 87% 66%) 54%, hsl(36deg 54% 56%) 91%);
+  color: #5a4812;
+  /* -webkit-background-clip: text; */
 }
 .card {
   border: 1px solid rgb(226 158 24);
@@ -145,18 +178,6 @@ footer {
 footer {
   height: 132px;
 }
-/* .frame-ornament-1 {
-  width: 57%;
-  bottom: 8.8rem;
-  left: 9.2rem;
-  transform: scale(1.1) rotate(355deg) translate(3px, 0px);
-}
-.frame-ornament-2 {
-  width: 56%;
-  top: 8.8rem;
-  right: 9.6rem;
-  transform: scale(1.1) rotate(359deg) translate(3px, 0px);
-} */
 
 .card-icon img {
   width: 100px;
@@ -168,4 +189,12 @@ footer {
   padding-bottom: 6px;
   width: 80% !important;
   margin: 0 auto;
+}
+
+.text-brown {
+  color: hsl(36deg 54% 30%);
+}
+
+.form-header {
+  background-image: linear-gradient(215deg, hsl(36deg 54% 47%) 13%, hsl(50deg 87% 62%) 54%, hsl(36deg 54% 47%) 91%);
 }
