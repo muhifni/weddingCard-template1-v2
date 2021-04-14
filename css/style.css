@@ -93,7 +93,6 @@ footer {
 .subject-2 p {
   font-size: 2.4rem;
   font-family: 'Alex Brush', cursive;
-  /* -webkit-text-stroke: 0.7px #966d0c; */
   background-image: linear-gradient(to right, #462523 0, hsl(36deg 54% 55%) 22%, #f6e27a 45%, hsl(56deg 75% 90%) 50%, rgb(246 226 122) 55%, hsl(36deg 54% 55%) 78%, #462523 100%);
   color: transparent;
   font-weight: 700;
