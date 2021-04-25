@@ -8,24 +8,44 @@ document.onreadystatechange = function () {
 
 
 // Muted / Unmute  toggle
-const img1 = "https://ik.imagekit.io/ifu66naiyrt/volume_WXh7-JI_w.svg";
-const img2 = "https://ik.imagekit.io/ifu66naiyrt/mute_L0j-LDO1z.svg";
+// const img1 = "https://ik.imagekit.io/ifu66naiyrt/volume_WXh7-JI_w.svg";
+// const img2 = "https://ik.imagekit.io/ifu66naiyrt/mute_L0j-LDO1z.svg";
+
+const volume = document.getElementById('volume');
+const mute = document.getElementById('mute');
 const music = document.getElementById("myMusic");
 const img = document.getElementById("mutedBtn");
 
+
+// function mutedUnmuted() {
+//   if (img.src === img1) {
+//     img.src = img2;
+//     music.pause();
+//     // music.muted = true;
+//     // console.log(vid.muted);
+//   } else {
+//     img.src = img1;
+//     music.play();
+//     // music.muted = false;
+//     // console.log(vid.muted);
+//   }
+// }
+
 function mutedUnmuted() {
-  if (img.src === img1) {
-    img.src = img2;
-    music.pause();
-    // music.muted = true;
-    // console.log(vid.muted);
+  volume.classList.toggle('d-none')
+  mute.classList.toggle('d-none')
+  if (music.muted === false) {    
+    music.muted = true;
+    console.log("Audio muted");
   } else {
-    img.src = img1;
-    music.play();
-    // music.muted = false;
-    // console.log(vid.muted);
+    // img.src = img1;
+    music.muted = false;
+    console.log("Audio unmuted");
   }
 }
+
+
+
 
 function playMusic() {
   music.play();
