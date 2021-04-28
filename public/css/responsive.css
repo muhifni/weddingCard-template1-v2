@@ -1,0 +1,310 @@
+@media (max-width: 225px) {
+  body {
+    width: fit-content;
+  }
+
+  .frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nama-pengantin {
+    font-size: 40px;
+  }
+
+  .subject-2 p {
+    margin-bottom: unset;
+  }
+
+  .date-border {
+    width: 80%;
+    height: 54%;
+  }
+}
+
+@media (min-width: 320px) {
+  .mempelai-wanita {
+    margin-bottom: 2rem;
+  }
+
+  .mempelai-pria {
+    margin-bottom: 3rem;
+  }
+
+  .frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .subject-2 p {
+    margin-bottom: unset;
+    font-size: 2rem;
+  }
+
+  .subject-acara p {
+    font-size: 1.8rem;
+  }
+
+  .frame-ornament-1 {
+    width: 53%;
+    bottom: 8.8rem;
+    left: 9.2rem;
+    transform: scale(1.1) rotate(355deg) translate(3px, 0px);
+  }
+
+  .frame-ornament-2 {
+    width: 53%;
+    top: 8.3rem;
+    right: 9.8rem;
+    transform: scale(1.1) rotate(359deg) translate(3px, 0px);
+  }
+
+  .subject-section-2 {
+    width: 87%;
+  }
+  .subject-section-2 p {
+    padding-top: 9px;
+    font-size: 1.3rem;
+  }
+
+  .subject-section-3 {
+    width: 85%;
+  }
+  .col.subject-section-3 p {
+    margin-bottom: 0.5rem;
+  }
+
+  .col.subject-2.mt-2 {
+    margin-bottom: -1rem;
+  }
+
+  .akad,
+  .resepsi {
+    height: 278px;
+    width: 278px;
+    margin: 0 auto;
+  }
+
+  .akad {
+    margin-bottom: 2rem;
+  }
+
+  .date-border {
+    height: 80%;
+  }
+
+  .date-number {
+    width: 32%;
+  }
+
+  .date p,
+  .alamat p {
+    font-size: 0.9rem;
+  }
+
+  .dates {
+    margin-bottom: -1rem;
+  }
+
+  .bulan {
+    padding-top: 10px;
+  }
+
+  .time-counter {
+    margin: 0 14px;
+  }
+
+  .time-container {
+    height: 55px;
+    width: 55px;
+  }
+
+  .time-container p {
+    top: 28%;
+    margin-top: 6px;
+  }
+
+  .time-container span {
+    bottom: 25% !important;
+    color: #966d0c;
+  }
+
+  .my-carousel {
+    width: 88%;
+    margin-bottom: 50px;
+  }
+
+  .gallery .row {
+    margin-bottom: unset !important;
+  }
+
+  section.gallery {
+    min-height: 425px;
+  }
+
+  .card {
+    width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .nama-pengantin {
+    font-size: 2rem;
+    margin-bottom: unset;
+  }
+
+  .ortu {
+    font-size: 1.3rem;
+    margin-bottom: unset;
+  }
+
+  .anak {
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+
+  .anak p {
+    margin: 0 0.5rem;
+  }
+
+  .anak hr {
+    border-bottom: 1px solid;
+    opacity: unset;
+    width: 23%;
+    position: relative;
+    top: 10px;
+  }
+
+  .alert {
+    width: 90%;
+    
+  }
+}
+
+@media (min-width: 360px) {
+  .frame-ornament-2 {
+    width: 50%;
+    top: 8.6rem;
+    right: 11.9rem;
+  }
+
+  .frame-ornament-1 {
+    width: 50%;
+    bottom: 8.8rem;
+    left: 11.2rem;
+  }
+
+  .subject-section-2 p {
+    padding-top: 7px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .date-border {
+    width: 100%;
+    height: 82%;
+  }
+  .frame-ornament-1 {
+    width: 47%;
+    bottom: 8.5rem;
+    left: 12rem;
+  }
+
+  .frame-ornament-2 {
+    width: 47%;
+    top: 8.5rem;
+    right: 12.5rem;
+  }
+}
+
+@media (min-width: 411px) {
+  .frame-ornament-1 {
+    width: 48%;
+    bottom: 8.5rem;
+    left: 13rem;
+  }
+  .frame-ornament-2 {
+    width: 48%;
+    top: 8rem;
+    right: 13.7rem;
+  }
+}
+
+@media (min-width: 414px) {
+  .date-border {
+    width: 95%;
+    height: 80%;
+  }
+
+  .frame-ornament-2 {
+    width: 45%;
+    top: 7.8rem;
+    right: 13.8rem;
+  }
+  .frame-ornament-1 {
+    width: 45%;
+    bottom: 8rem;
+    left: 13.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .frame-ornament-1 {
+    width: 35%;
+    bottom: 7.5rem;
+    left: 22.2rem;
+  }
+
+  .frame-ornament-2 {
+    width: 35%;
+    top: 7.3rem;
+    right: 22.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .frame-ornament-1 {
+    width: 27%;
+    bottom: 7.8rem;
+    left: 31.2rem;
+  }
+
+  .frame-ornament-2 {
+    width: 27%;
+    top: 7.5rem;
+    right: 31.6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 760px) {
+  .maps {
+    width: 46.333333% !important;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 799px) {
+  .frame-ornament-1 {
+    width: 27%;
+    bottom: 7.5rem;
+    left: 32.4rem;
+  }
+
+  .frame-ornament-2 {
+    width: 27%;
+    top: 7.2rem;
+    right: 33rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .date-border {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-size {
+    width: 411px;
+    height: 731px;
+    overflow: auto;
+  }
+}
